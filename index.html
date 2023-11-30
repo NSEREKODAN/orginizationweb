@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DanStore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style=" background: url(img/bacground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;">
+    <!--The header section-->
+    <header>
+
+      <div class="header-left">
+        <div class="logo">
+          <h1 style="color: blanchedalmond; font-weight: bolder;">
+            Dan<span style="color: rgb(236, 171, 109);">Store</span>
+          </h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <div class="login-signup">
+            <a href="">Login</a> or <a href="">Signup</a>
+          </div>
+        </nav>
+      </div>
+      <div class="header-right">
+      
+        <div class="hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="content">
+        <h1>DanStore</h1>
+        <h2>Dealers in latest Products</h2>
+        <a>Explore</a>
+      </div>
+    </section>
+    <!--The header section ends-->
+
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      nav = document.querySelector("nav");
+      hamburger.onclick = function () {
+        nav.classList.toggle("active");
+      };
+    </script>
+
+  </body>
+</html>
