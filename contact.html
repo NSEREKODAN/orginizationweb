@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DanStore/Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+         <!--The header section-->
+         <header>
+
+            <div class="header-left">
+              <div class="logo">
+                <h1 style="color: blanchedalmond; font-weight: bolder;">
+                  Dan<span style="color: rgb(236, 171, 109);">Store</span>
+                </h1>
+              </div>
+              <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="product.html">Products</a></li>
+                  <li><a href="#" class="active">Contact Us</a></li>
+                </ul>
+                <div class="login-signup">
+                  <a href="">Login</a> or <a href="">Signup</a>
+                </div>
+              </nav>
+            </div>
+            <div class="header-right">
+            
+              <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            </div>
+          </header>
+          <!--The header section ends-->
+
+    <div class="container">
+        <form>
+            <h1>Contact Us</h1>
+            <h4>Get in touch</h4>
+            <input type="text" id="firstName" placeholder="First Name" required>
+            <input type="text" id="lastName" placeholder="Last Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="mobile" placeholder="Mobile" required>
+            <h4>Type Your Message Here...</h4>
+            <textarea required></textarea>
+            <input type="submit" value="Send" id="button">
+        </form>
+    </div>
+
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        nav = document.querySelector("nav");
+        hamburger.onclick = function () {
+          nav.classList.toggle("active");
+        };
+      </script>
+
+</body>
+</html>
